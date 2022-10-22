@@ -1,5 +1,19 @@
 import unittest
 
+class Converter:
+
+    def DToMm(self, d):
+        return d * 25.4
+
+    def D2ToSm2(self, d2):
+        return d2*6.45
+
+    def D3ToSm3(self, d3):
+        return d3*16.39
+
+    def UToL(self, u):
+        return u*0.029
+
 
 class TestConverter(unittest.TestCase):
     def setUp(self):
