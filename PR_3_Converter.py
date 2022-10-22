@@ -34,6 +34,18 @@ class TestConverter(unittest.TestCase):
     def test_5(self):
         self.assertEqual(self.obj.UToL(23), 0.667)
 
+    def test_6(self):
+        self.assertEqual(self.obj.DToMm(-2), 'Error!')
+
+    def test_7(self):
+        self.assertEqual(self.obj.D2ToSm2(-2), 'Error!')
+
+    def test_8(self):
+        self.assertEqual(self.obj.D3ToSm3(-2), 'Error!')
+
+    def test_9(self):
+        self.assertEqual(self.obj.UToL(-2), 'Error!')
+
 
 if __name__ == "__main__":
     unittest.main()
