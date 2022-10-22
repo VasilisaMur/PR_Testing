@@ -3,16 +3,24 @@ import unittest
 class Converter:
 
     def DToMm(self, d):
-        return d * 25.4
+        if d > 0:
+            return d * 25.4
+        return "Error!"
 
     def D2ToSm2(self, d2):
-        return d2*6.45
+        if d2 > 0:
+            return d2*6.45
+        return "Error!"
 
     def D3ToSm3(self, d3):
-        return d3*16.39
+        if d3 > 0:
+            return d3*16.39
+        return 'Error!'
 
     def UToL(self, u):
-        return u*0.029
+        if u > 0:
+            return u*0.029
+        return 'Error!'
 
 
 class TestConverter(unittest.TestCase):
